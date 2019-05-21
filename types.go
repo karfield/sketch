@@ -108,6 +108,9 @@ type Layer struct {
 	VerticalRulerData                 *RulerData                 `json:"verticalRulerData,omitempty"`
 	VerticalSpacing                   json.Number                `json:"verticalSpacing"`
 	WindingRule                       json.Number                `json:"windingRule"`
+
+	//
+	Points               []*CurvePoint `json:"points"`
 }
 
 type Meta struct {
